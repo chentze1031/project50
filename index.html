@@ -1,151 +1,167 @@
 <!DOCTYPE html>
+<!-- Generated from app/assets/legal/privacy_policy.json; do not edit separately. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Project 50 — Privacy Policy / 隐私政策</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Project 50 privacy policy and account deletion request / 隐私政策及账号删除申请">
+<title>Project 50 — Privacy policy / 隐私政策</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-                 'PingFang SC', 'Microsoft YaHei', sans-serif;
-    background: #0E0E10; color: #E0E0E0;
-    line-height: 1.7; padding: 40px 20px;
-  }
-  .container { max-width: 680px; margin: 0 auto; }
-  .brand {
-    display: inline-flex; align-items: center; justify-content: center;
-    width: 48px; height: 48px; border-radius: 12px;
-    background: #FF5A1F; color: #0E0E10;
-    font-size: 20px; font-weight: 900; margin-bottom: 20px;
-  }
-  h1 { color: #FF5A1F; font-size: 28px; margin-bottom: 8px; }
-  h2 { color: #FF5A1F; font-size: 18px; margin: 32px 0 12px; }
-  p, li { font-size: 15px; margin-bottom: 12px; }
-  ul { padding-left: 20px; }
-  .date { color: #888; font-size: 13px; margin-bottom: 32px; }
-  a { color: #FF5A1F; }
-  .switch { margin-bottom: 28px; }
-  .switch button {
-    background: #1A1A1D; color: #A0A0A0; border: 1px solid #2A2A2D;
-    padding: 8px 18px; font-size: 14px; font-weight: 600;
-    border-radius: 10px; cursor: pointer; margin-right: 8px;
-    font-family: inherit;
-  }
-  .switch button.on { background: #FF5A1F; color: #0E0E10; border-color: #FF5A1F; }
-  [hidden] { display: none !important; }
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #0E0E10; color: #F5F5F7; font: 16px/1.75 system-ui, 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+main { max-width: 740px; margin: auto; padding: 32px 22px 64px; }
+header { padding-bottom: 20px; border-bottom: 1px solid #39393D; }
+header strong { font-size: 21px; }
+nav { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+button, .action { display: inline-block; border: 1px solid #77777D; border-radius: 10px; padding: 9px 16px; background: #1A1A1D; color: #F5F5F7; font: inherit; cursor: pointer; }
+button[aria-pressed='true'], .action { background: #FF5A1F; border-color: #FF5A1F; color: #0E0E10; font-weight: 650; }
+button:focus-visible, a:focus-visible { outline: 3px solid #F5F5F7; outline-offset: 4px; }
+a { color: #FF8A5F; overflow-wrap: anywhere; }
+.action { text-decoration: none; }
+h1 { font-size: 29px; line-height: 1.25; margin: 30px 0 8px; }
+h2 { font-size: 20px; line-height: 1.4; margin: 28px 0 10px; }
+p { margin: 0 0 14px; overflow-wrap: anywhere; }
+.updated { color: #B0B0B7; font-size: 14px; }
+.deletion { border-left: 4px solid #FF5A1F; padding: 8px 0 8px 18px; margin-top: 24px; scroll-margin-top: 20px; }
+.deletion h2 { margin-top: 0; }
+[hidden] { display: none !important; }
 </style>
 </head>
-<body>
-<div class="container">
-
-  <div class="brand">50</div>
-
-  <div class="switch">
-    <button id="btn-en" class="on" onclick="pick('en')">English</button>
-    <button id="btn-zh" onclick="pick('zh')">中文</button>
-  </div>
-
-  <!-- ─────────────── English ─────────────── -->
-  <section id="en">
-    <h1>Privacy Policy</h1>
-    <p class="date">Last updated: September 10, 2026</p>
-
-    <p>Project 50 ("the App") is a 50-day habit-building app. Your privacy matters to us. This policy explains what data the App collects, how it is used, and your choices.</p>
-
-    <h2>1. Data We Collect</h2>
-    <p><strong>Data you provide:</strong> When you create a challenge, the App stores your difficulty setting, daily rule completion status, streak history, and personalization choices (alarm time, book title, workout type). If you sign in with Google, we store your account identifier and email address for authentication.</p>
-    <p><strong>Data collected automatically:</strong> We use Firebase Analytics to collect anonymous usage events (app opens, challenge starts and completions, feature usage) and Firebase Crashlytics to collect crash reports. These include device model, OS version, and app version — no personal content.</p>
-    <p>If you use the App as a guest, your data stays on your device and is not uploaded.</p>
-
-    <h2>2. How We Use Your Data</h2>
-    <ul>
-      <li>To operate and improve the App</li>
-      <li>To sync your challenge progress across devices (when signed in)</li>
-      <li>To diagnose crashes and fix bugs</li>
-      <li>To understand aggregate usage patterns</li>
-    </ul>
-
-    <h2>3. Data Sharing</h2>
-    <p>We do not sell your data. We share data only with:</p>
-    <ul>
-      <li><strong>Firebase (Google)</strong> — analytics and crash reporting</li>
-      <li><strong>Supabase</strong> — cloud database and authentication</li>
-    </ul>
-    <p>Both operate under their own privacy policies and process data on our behalf.</p>
-
-    <h2>4. Data Retention and Deletion</h2>
-    <p>Your challenge data is kept as long as your account exists. You can permanently delete your account and all associated data at any time from <strong>Settings → Account → Delete account</strong> inside the App; deletion is immediate and irreversible. Alternatively, email <a href="mailto:chentze961031@gmail.com">chentze961031@gmail.com</a> from the address linked to your account and we will process the request within 30 days. Anonymous analytics are retained for 14 months per Google's default retention.</p>
-
-    <h2>5. Your Rights</h2>
-    <p>You can request a copy of your data, correct inaccuracies, or request deletion by contacting us. If you are in the EU/EEA, you have rights under GDPR including data portability and the right to object to processing.</p>
-
-    <h2>6. Children's Privacy</h2>
-    <p>The App is not directed at children under 13. We do not knowingly collect data from children under 13. If we learn we have, we will delete it promptly.</p>
-
-    <h2>7. Changes</h2>
-    <p>We may update this policy. Material changes will be communicated via an in-app notice. Continued use after changes constitutes acceptance.</p>
-
-    <h2>8. Contact</h2>
-    <p>Questions about this policy? Email <a href="mailto:chentze961031@gmail.com">chentze961031@gmail.com</a>.</p>
-  </section>
-
-  <!-- ─────────────── 中文 ─────────────── -->
-  <section id="zh" hidden>
-    <h1>隐私政策</h1>
-    <p class="date">最后更新：2026 年 9 月 10 日</p>
-
-    <p>Project 50（下称「本应用」）是一款 50 天习惯养成应用。我们重视你的隐私。本政策说明本应用收集哪些数据、如何使用，以及你拥有的选择权。</p>
-
-    <h2>1. 我们收集的数据</h2>
-    <p><strong>你提供的数据：</strong>当你创建挑战时，本应用会存储你的难度设置、每日规则完成状态、连续记录历史，以及个性化选项（闹钟时间、书名、运动类型）。若你使用 Google 登录，我们会存储你的账号标识和邮箱地址用于身份验证。</p>
-    <p><strong>自动收集的数据：</strong>我们使用 Firebase Analytics 收集匿名使用事件（应用启动、挑战开始与完成、功能使用情况），并使用 Firebase Crashlytics 收集崩溃报告。这些数据包含设备型号、系统版本和应用版本，不包含任何个人内容。</p>
-    <p>若你以访客身份使用，数据仅保存在你的设备本地，不会上传。</p>
-
-    <h2>2. 我们如何使用数据</h2>
-    <ul>
-      <li>运营和改进本应用</li>
-      <li>在你登录后跨设备同步挑战进度</li>
-      <li>诊断崩溃并修复缺陷</li>
-      <li>了解整体使用模式</li>
-    </ul>
-
-    <h2>3. 数据共享</h2>
-    <p>我们不出售你的数据。我们仅与以下服务方共享数据：</p>
-    <ul>
-      <li><strong>Firebase（Google）</strong> — 用于分析和崩溃上报</li>
-      <li><strong>Supabase</strong> — 用于云端数据库和身份验证</li>
-    </ul>
-    <p>两者均遵循各自的隐私政策，并代表我们处理数据。</p>
-
-    <h2>4. 数据保留与删除</h2>
-    <p>你的挑战数据将在账号存续期间保留。你可以随时在应用内通过 <strong>设置 → 账户 → 删除账号</strong> 永久删除账号及全部相关数据，删除立即生效且不可恢复。你也可以使用账号绑定的邮箱发送邮件至 <a href="mailto:chentze961031@gmail.com">chentze961031@gmail.com</a>，我们将在 30 天内处理。匿名分析数据按 Google 默认策略保留 14 个月。</p>
-
-    <h2>5. 你的权利</h2>
-    <p>你可以联系我们索取数据副本、更正错误信息或要求删除。若你位于欧盟／欧洲经济区，你享有 GDPR 规定的权利，包括数据可携权和拒绝处理权。</p>
-
-    <h2>6. 儿童隐私</h2>
-    <p>本应用不面向 13 岁以下儿童。我们不会在知情的情况下收集 13 岁以下儿童的数据。如发现此类情况，我们将立即删除。</p>
-
-    <h2>7. 政策变更</h2>
-    <p>我们可能更新本政策。重大变更将通过应用内通知告知。变更后继续使用即视为接受。</p>
-
-    <h2>8. 联系我们</h2>
-    <p>对本政策有疑问？请发邮件至 <a href="mailto:chentze961031@gmail.com">chentze961031@gmail.com</a>。</p>
-  </section>
-
-</div>
-
+<body><main>
+<header><strong>Project 50</strong><nav aria-label="Policy language / 政策语言">
+<button type="button" id="btn-en" aria-pressed="true" onclick="pick('en')">English</button>
+<button type="button" id="btn-zh" aria-pressed="false" onclick="pick('zh')">中文</button>
+<a href="#delete-account">Delete account / 删除账号</a>
+</nav></header>
+<aside class="deletion" id="delete-account" aria-label="Account deletion / 账号删除">
+<h2>Request account deletion / 申请删除账号</h2>
+<p>No app installation is needed. Email the developer with your linked email or guest account ID; do not send passwords or tokens. Ownership is verified before deletion. Details and retention exceptions are explained below.</p>
+<p>无需安装应用。请使用绑定邮箱或提供访客账号 ID 联系开发者，不要提供密码或令牌。删除前会核实归属；处理方式与保留例外见下文。</p>
+<p><a class="action" href="mailto:chentze961031@gmail.com?subject=Project%2050%20account%20deletion">Email deletion request / 邮件申请删除</a></p>
+<p><a href="mailto:chentze961031@gmail.com">chentze961031@gmail.com</a></p>
+</aside>
+<section id="en" lang="en">
+<h1>Privacy policy</h1><p class="updated">Last updated: October 7, 2026</p>
+<section id="en-about">
+<h2>About Project 50</h2>
+<p>Project 50 is a habit-building challenge app operated by its developer, whose privacy contact is chentze961031@gmail.com. This policy covers the Android app, account and challenge services, friends, optional training partner discovery and shared training. It describes the current test version, not planned features.</p>
+</section>
+<section id="en-accounts">
+<h2>Accounts, guests and cloud storage</h2>
+<p>The connected app uses Supabase to authenticate users and store account and challenge records. Google sign-in provides an account identifier and email address, and may provide basic Google profile information as part of authentication. We use this information for account access and restoration, not to publish your email to other users.</p>
+<p>A guest in the connected app receives a Supabase anonymous account identifier. Guest challenges, daily drafts and progress can be uploaded and synchronized under that identifier. Guest does not mean device-only or no collection. Offline edits are cached locally and queued for synchronization when connectivity returns. A separate developer build without backend configuration stores challenge data locally; that is not the connected Play test app.</p>
+<p>If you link a guest session to Google, guest challenges can be retained with the account. When the destination account already has challenges, the app preserves separate challenges and lets you choose which to continue. Signing out does not delete an account, cloud records or all device caches. An unlinked guest may lose access after signing out or removing app data; link it or request deletion before doing so.</p>
+</section>
+<section id="en-progress">
+<h2>Challenge and fitness information</h2>
+<p>We process difficulty and challenge history, rule completion, streaks, experience, wake and alarm settings, morning checkboxes, workout type and recorded time, meditation and other task timers, book titles and reading progress, skill goals, meal quality choices and reflection answers you enter. In the connected app these records and daily drafts are stored locally and synchronized to your account.</p>
+<p>Timers record app-confirmed elapsed time, not proof of exercise, physiological measurements or medical outcomes. The app is not a medical service. It does not read GPS routes, a phone address book, microphone recordings or health-sensor data for these features. Do not enter medical records or sensitive information that is unnecessary for your habit practice.</p>
+</section>
+<section id="en-social">
+<h2>Friends, discovery and visibility</h2>
+<p>Friend features store your chosen nickname, friend code, search preference, friendship requests and relationships, blocks and action timestamps. Exact friend-code lookup can expose your friend identity to someone who has the code. Nickname search is off by default and can be enabled or disabled in your friend profile.</p>
+<p>Training partner discovery is optional and off by default. Joining stores and shares your nickname and chosen goals, availability, UTC offset and intensity with other eligible participants to recommend compatible partners. Your self-confirmation that you are 18 or older is stored; it is not independent age verification. Turning discovery off stops future recommendations but does not delete existing friends or invitations.</p>
+<p>Friend and partner discovery do not display your email, physical location, private books, skill text, reflection answers or private daily drafts. Friend relationships are an in-app social graph; we do not import your device contacts. Please avoid putting private contact details in a nickname.</p>
+</section>
+<section id="en-training">
+<h2>Shared training and reports</h2>
+<p>When a friend accepts a shared training invitation, the service stores the participants, selected activity and target duration, invitation and timer states, confirmed time, timestamps, and fixed encouragement messages. The two participants can see the session and each other&#39;s confirmed session time. A random app-device timer token coordinates timing across devices; it is not a hardware identifier or a location tracker. Sessions require a foreground network connection and do not verify actual physical activity.</p>
+<p>Reports store the reporting and reported account identifiers, selected reason, timestamps and review state. These are restricted to authorized operators for safety review, not a public feed. Reporting does not automatically prove misconduct or delete the reported account. Blocking removes the friendship and pending requests and ends related active training. The app currently has no free-text chat, voice calls or evidence uploads.</p>
+</section>
+<section id="en-telemetry">
+<h2>Analytics, diagnostics and identifiers</h2>
+<p>When Firebase is configured, Firebase Analytics and Crashlytics process usage events, app sessions, crash and diagnostic information, device model, system and app versions, and app-instance or installation identifiers. Analytics can collect an Android advertising identifier when available and derive a coarse region from a masked IP address under its default configuration. We do not request GPS permission or use these analytics regions to recommend nearby strangers.</p>
+<p>Our analytics event definitions use feature and challenge metrics rather than book titles, reflection answers or private task text. Pseudonymous identifiers are still collected data, not a guarantee of complete anonymity. Authentication and hosting providers also process network metadata such as IP addresses and service logs to deliver and protect the service. The current connected app does not offer an in-app switch to disable Firebase collection. It does not display ads or sell data.</p>
+</section>
+<section id="en-providers">
+<h2>Purposes, providers and protection</h2>
+<p>We use data to authenticate and manage accounts, save and restore challenges, operate optional friend and shared training features, personalize opted-in partner recommendations, investigate abuse, diagnose errors and understand app usage. Other users receive only the information described in the social and shared training sections when you use those features.</p>
+<p>Supabase provides authentication, database and server functions. Google provides Google sign-in; Firebase/Google Analytics provide analytics and crash reporting. Providers may process data in countries other than yours under their service arrangements. Data transmitted to our configured backend and Firebase uses HTTPS/TLS. Database ownership policies and restricted server operations control account and report access. No system can guarantee absolute security, and HTTPS is not a claim of end-to-end encryption.</p>
+</section>
+<section id="en-retention">
+<h2>Retention and local copies</h2>
+<p>Account-owned challenge, friend, discovery, report and training records are retained while the account exists unless removed through a supported action. An invitation or training session expiring does not mean its stored history is immediately deleted. Local caches can remain after sign-out so that pending edits and account-specific restoration are not discarded.</p>
+<p>Deleting an account removes its authentication identity and associated active application records through the account deletion service. This can also remove related friendship or shared training records for the other participant. Provider backups, security logs and diagnostic copies may remain until their configured retention or recovery lifecycle expires; account deletion is not a promise that every provider copy disappears instantly. Analytics and diagnostic retention depends on the configured Google services, not an assumed universal 14-month default. Contact us for deletion and retention questions. Any legally required retention will be explained in the response.</p>
+</section>
+<section id="en-deletion">
+<h2>Request account and data deletion</h2>
+<p>In the app, open Settings → Account → Delete account and confirm. This applies to the current account, including a connected guest session; sign-out alone is not deletion. Before deletion, make sure you have selected the account whose challenges you intend to remove.</p>
+<p>Without installing or opening the app, email chentze961031@gmail.com with the subject Project 50 account deletion. Send from the Google email linked to the account when possible. For a guest, include its account ID if you still have it. You can also request deletion of specific data. We will verify ownership before removing records and process verified requests within 30 days. Never send your Google password, sign-in token or identity document by email. If you cannot access the linked email or guest ID, contact us to discuss verification; another person&#39;s email address alone does not authorize deletion.</p>
+<p>You can ask the same contact about access, correction, export or privacy rights available under applicable law. Removing local app data does not by itself delete cloud data. This app does not currently provide a single action guaranteed to purge every retained device cache; tell us if your request also concerns local copies.</p>
+</section>
+<section id="en-age-changes">
+<h2>Age, changes and contact</h2>
+<p>Project 50 is intended for adults aged 18 or older and is not designed for children. Discovery requires an 18+ self-confirmation, not a verified age check. If you believe a child has provided data, contact chentze961031@gmail.com so we can investigate and arrange deletion where appropriate.</p>
+<p>Updates to this policy are published here with a revised date. This policy describes processing; viewing it or continuing to use the app is not a substitute for any separate consent required by applicable law. Questions and requests: chentze961031@gmail.com.</p>
+</section>
+</section>
+<section id="zh" lang="zh">
+<h1>隐私政策</h1><p class="updated">最后更新：2026 年 10 月 7 日</p>
+<section id="zh-about">
+<h2>关于 Project 50</h2>
+<p>Project 50 是由本应用开发者运营的习惯养成挑战应用，隐私联系邮箱为 chentze961031@gmail.com。本政策覆盖 Android 应用、账号和挑战服务、好友、自愿参与的训练搭子推荐及共同训练，说明当前测试版本的行为，不代表尚未开发的功能。</p>
+</section>
+<section id="zh-accounts">
+<h2>账号、访客与云端保存</h2>
+<p>联网版本使用 Supabase 验证身份并保存账号及挑战记录。Google 登录提供账号标识和邮箱，身份验证过程中也可能提供基本 Google 资料。这些信息用于登录和恢复账号，不用于向其他用户公开你的邮箱。</p>
+<p>联网版本的访客会获得 Supabase 匿名账号标识，挑战、每日草稿和进度可以在该标识下上传及同步。因此，访客不等于仅保存在本机，也不等于不收集数据。离线修改会先缓存在本机，联网后再排队同步。未配置后端的独立开发版本才会仅在本机保存挑战；它不是联网的 Play 测试版本。</p>
+<p>访客绑定 Google 后，可以保留访客挑战。目标账号已有挑战时，应用保留独立挑战，让你选择继续哪一份。退出登录不会删除账号、云端记录或全部设备缓存。未绑定访客在退出登录或清除应用数据后可能失去原账号入口，请先绑定或申请删除。</p>
+</section>
+<section id="zh-progress">
+<h2>挑战及健身相关信息</h2>
+<p>我们处理你填写的难度、挑战历史、规则完成情况、连续记录、经验值、起床和闹钟设置、晨间勾选、运动类型和时长、冥想及其他任务计时、书名和阅读进度、技能目标、餐次质量选择及复盘答案。联网版本会在本机保存这些记录和每日草稿，并同步到对应账号。</p>
+<p>计时器记录应用确认的经过时间，不证明你实际完成运动，也不测量生理指标或医疗效果。本应用不是医疗服务；上述功能不读取 GPS 轨迹、手机通讯录、麦克风录音或健康传感器数据。请不要在习惯记录中填写不必要的病历或其他敏感信息。</p>
+</section>
+<section id="zh-social">
+<h2>好友、搭子与可见范围</h2>
+<p>好友功能保存你选择的昵称、好友码、搜索设置、好友申请和关系、拉黑关系及操作时间。持有完整好友码的人可以通过精确搜索看到你的好友身份。昵称搜索默认关闭，可以在好友资料中开启或关闭。</p>
+<p>训练搭子推荐为自愿参与，默认关闭。参与时，会保存并向其他符合条件的参与者展示你的昵称，以及所选目标、训练时段、UTC 偏移和强度，用于推荐合适搭子。系统保存你自行确认年满 18 岁的选择，但这不是独立年龄认证。关闭参与会停止后续推荐，不会自动删除已有好友或邀请。</p>
+<p>好友及搭子搜索不展示你的邮箱、实际位置、私人书名、技能文本、复盘答案或每日私人草稿。好友关系属于应用内社交关系图，不是导入手机通讯录。请避免在昵称里填写私人联系方式。</p>
+</section>
+<section id="zh-training">
+<h2>共同训练与举报</h2>
+<p>好友接受共同训练邀请后，服务会保存参与者、活动和目标时长、邀请与计时状态、已确认时间、时间戳及固定鼓励消息。双方能看到本次训练和对方已确认时长。随机生成的应用设备计时标识用于协调多设备计时，不是硬件标识或位置跟踪。共同训练需要前台联网，不验证实际身体活动。</p>
+<p>举报保存举报者和被举报者账号标识、所选理由、时间戳及审核状态，仅供获授权的运营人员作安全审核，不作为公开动态。举报不自动证明违规，也不自动删除对方账号。拉黑会删除好友关系和双方待处理申请，并终止相关进行中的训练。当前版本没有自由文本聊天、语音通话或证据文件上传。</p>
+</section>
+<section id="zh-telemetry">
+<h2>分析、诊断与标识符</h2>
+<p>配置 Firebase 时，Firebase Analytics 和 Crashlytics 会处理使用事件、应用会话、崩溃和诊断信息、设备型号、系统及应用版本，以及应用实例或安装标识。按默认配置，Analytics 在可用时可收集 Android 广告标识符，并从掩码 IP 地址推断粗略地区。应用不申请 GPS 权限，也不使用这些分析地区推荐附近陌生人。</p>
+<p>应用定义的分析事件使用功能及挑战指标，而不是书名、复盘答案或私人任务文本。假名化标识仍是收集的数据，不保证完全匿名。身份验证和托管服务也会处理 IP 地址、服务日志等网络信息，以提供服务并防止滥用。当前联网版本没有应用内关闭 Firebase 收集的开关。应用不展示广告，也不出售数据。</p>
+</section>
+<section id="zh-providers">
+<h2>用途、服务方与保护</h2>
+<p>数据用于身份验证和账号管理、挑战保存及恢复、自愿使用的好友与共同训练功能、已开启的搭子推荐个性化、安全举报调查、故障诊断和使用情况分析。使用社交功能时，其他用户仅获得本政策好友及共同训练章节说明的信息。</p>
+<p>Supabase 提供身份验证、数据库和服务端函数；Google 提供 Google 登录；Firebase／Google Analytics 提供分析及崩溃上报。服务方可能根据其服务安排在你所在国家以外处理数据。向已配置后端和 Firebase 传输数据使用 HTTPS／TLS；数据库归属策略和受限服务端操作控制账号和举报访问。没有系统能保证绝对安全；HTTPS 不代表端到端加密。</p>
+</section>
+<section id="zh-retention">
+<h2>保留期限与本机副本</h2>
+<p>账号所属的挑战、好友、推荐、举报和训练记录在账号存续期间保留，除非通过已支持的操作移除。邀请或训练到期不表示其历史记录立即从数据库删除。退出登录后，本机缓存可能继续保留，避免丢弃待同步修改及账号恢复数据。</p>
+<p>删除账号会通过账号删除服务移除身份及关联的在线应用记录，也可能移除另一参与者相关的好友或共同训练记录。服务方备份、安全日志和诊断副本可能保留到其已配置的保留或恢复周期结束，账号删除不保证每个服务方副本瞬间消失。分析和诊断的期限取决于 Google 服务的实际配置，不使用未经核实的统一「默认 14 个月」承诺。有关删除和保留期限请联系我们；如依法必须保留部分数据，会在回复中说明。</p>
+</section>
+<section id="zh-deletion">
+<h2>申请删除账号及数据</h2>
+<p>在应用内打开「设置 → 账户 → 删除账号」并确认，可申请删除当前账号，包括联网访客账号。退出登录本身不是删除。操作前请确认已选择要删除其挑战记录的账号。</p>
+<p>无需安装或打开应用，也可发送邮件至 chentze961031@gmail.com，主题为「Project 50 账号删除」。请尽可能使用绑定 Google 的邮箱发送；访客如仍保有账号 ID，请一并提供。也可申请删除指定数据。我们会先核实归属，并在核实后的 30 天内处理。请勿通过邮件提供 Google 密码、登录令牌或身份证件。如果无法使用原邮箱或访客 ID，请联系讨论验证方式；仅提供他人邮箱不构成删除授权。</p>
+<p>同一邮箱也受理数据访问、更正、导出及适用法律下的隐私权利请求。清除本机应用数据本身不删除云端记录。当前应用没有保证一次清除所有保留设备缓存的操作；如果请求涉及本机副本，请在联系时说明。</p>
+</section>
+<section id="zh-age-changes">
+<h2>年龄、更新与联系</h2>
+<p>Project 50 面向年满 18 岁的成年人，不为儿童设计。搭子参与要求自行确认 18 岁，不是经过验证的年龄检查。如认为儿童提交了数据，请联系 chentze961031@gmail.com，我们会调查并在适当情况下安排删除。</p>
+<p>本政策更新会在此公布并修改日期。政策用于说明处理行为，阅读政策或继续使用不替代适用法律要求的单独同意。问题及申请请发送至 chentze961031@gmail.com。</p>
+</section>
+</section>
+<footer><p>Policy version / 政策版本：2026-10-07</p></footer>
+</main>
 <script>
-  function pick(lang) {
-    document.getElementById('en').hidden = lang !== 'en';
-    document.getElementById('zh').hidden = lang !== 'zh';
-    document.getElementById('btn-en').classList.toggle('on', lang === 'en');
-    document.getElementById('btn-zh').classList.toggle('on', lang === 'zh');
-    document.documentElement.lang = lang;
+function pick(language) {
+  if (language !== 'en' && language !== 'zh') return;
+  for (const key of ['en', 'zh']) {
+    document.getElementById(key).hidden = key !== language;
+    document.getElementById('btn-' + key).setAttribute('aria-pressed', String(key === language));
   }
-  // Default to Chinese for zh-* browsers.
-  if ((navigator.language || '').toLowerCase().startsWith('zh')) pick('zh');
+  document.documentElement.lang = language;
+}
+pick(location.hash.startsWith('#zh-') || (navigator.language || '').toLowerCase().startsWith('zh') ? 'zh' : 'en');
 </script>
-</body>
-</html>
+</body></html>
